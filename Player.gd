@@ -1,4 +1,4 @@
-extends AnimatedSprite
+extends Area2D
 
 
 const KICK = Vector2(0, -1500)
@@ -30,7 +30,7 @@ func _process(delta):
 	position.x = clamp(position.x, 0+half_width, screen_size.x-half_width)
 
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	
 	if Input.is_action_just_pressed("ui_head"):
 		head.move_and_slide(KICK)
