@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://art/player.png" type="Texture" id=1]
+[ext_resource path="res://Player.gd" type="Script" id=2]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 14.0
+height = 0.0
+
+[node name="Player" type="AnimatedSprite"]
+scale = Vector2( 0.8, 0.8 )
+frames = SubResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Headracket" type="KinematicBody2D" parent="."]
+position = Vector2( 0, -129 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Headracket"]
+shape = SubResource( 2 )
+
+[node name="Polygon2D" type="Polygon2D" parent="Headracket/CollisionShape2D"]
+polygon = PoolVector2Array( -13.75, -0.999985, -10, -9.74998, -2.5, -13.5, 3.75, -13.5, 11.25, -7.24998, 13.75, 2.75002, 10, 9.00002, 1.25, 14, -7.5, 11.5, -12.5, 5.25002 )
