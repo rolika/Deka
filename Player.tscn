@@ -11,23 +11,21 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=2]
-radius = 14.0
-height = 0.0
+[sub_resource type="CircleShape2D" id=4]
+radius = 13.7523
 
 [node name="Player" type="Area2D"]
 scale = Vector2( 0.8, 0.8 )
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-scale = Vector2( 1, 1 )
 frames = SubResource( 3 )
 
 [node name="Headracket" type="KinematicBody2D" parent="."]
 position = Vector2( 0, -129 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Headracket"]
-shape = SubResource( 2 )
+shape = SubResource( 4 )
 
 [node name="Polygon2D" type="Polygon2D" parent="Headracket/CollisionShape2D"]
 polygon = PoolVector2Array( -13.75, -0.999985, -10, -9.74998, -2.5, -13.5, 3.75, -13.5, 11.25, -7.24998, 13.75, 2.75002, 10, 9.00002, 1.25, 14, -7.5, 11.5, -12.5, 5.25002 )
