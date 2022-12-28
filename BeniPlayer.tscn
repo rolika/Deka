@@ -18,68 +18,161 @@
 [node name="BeniPlayer" type="Node2D"]
 
 [node name="hip" type="Sprite" parent="."]
+rotation = -0.0593362
 texture = ExtResource( 1 )
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
 
 [node name="leg_left" type="Sprite" parent="hip"]
 position = Vector2( 155, 176 )
+rotation = -0.0399753
 texture = ExtResource( 12 )
 offset = Vector2( 0, 252 )
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
 
 [node name="shin_left" type="Sprite" parent="hip/leg_left"]
 position = Vector2( -9, 539 )
+rotation = 0.12624
 texture = ExtResource( 13 )
 offset = Vector2( 0, 300 )
+__meta__ = {
+"_edit_bone_": true
+}
 
 [node name="foot_left" type="Sprite" parent="hip/leg_left/shin_left"]
 position = Vector2( 35, 668 )
+rotation = -0.0813783
 texture = ExtResource( 14 )
 offset = Vector2( 39, 136 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="end" type="Position2D" parent="hip/leg_left/shin_left/foot_left"]
+position = Vector2( 109, 266 )
+__meta__ = {
+"_edit_bone_": true
+}
 
 [node name="leg_right" type="Sprite" parent="hip"]
 position = Vector2( -147, 198 )
+rotation = 0.0288269
 texture = ExtResource( 10 )
 offset = Vector2( 0, 224 )
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
 
 [node name="shin_right" type="Sprite" parent="hip/leg_right"]
 position = Vector2( 0, 483 )
+rotation = 0.0177852
 texture = ExtResource( 8 )
 offset = Vector2( 0, 334 )
+__meta__ = {
+"_edit_bone_": true
+}
 
 [node name="foot_right" type="Sprite" parent="hip/leg_right/shin_right"]
 position = Vector2( -49, 720 )
+rotation = -0.0451682
 texture = ExtResource( 11 )
 offset = Vector2( -44, 144 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="end" type="Position2D" parent="hip/leg_right/shin_right/foot_right"]
+position = Vector2( -117, 282 )
+rotation = -0.165717
+__meta__ = {
+"_edit_bone_": true
+}
 
 [node name="torso" type="Sprite" parent="hip"]
 position = Vector2( 18, -303 )
+rotation = 0.0593362
 texture = ExtResource( 2 )
 offset = Vector2( -28, -334 )
+__meta__ = {
+"_edit_bone_": true
+}
 
 [node name="arm_right" type="Sprite" parent="hip/torso"]
-position = Vector2( -179, -761 )
+position = Vector2( -172, -765 )
+rotation = 0.000104014
 texture = ExtResource( 3 )
 offset = Vector2( -121, 317 )
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
 
 [node name="hand_right" type="Sprite" parent="hip/torso/arm_right"]
-position = Vector2( -237, 704 )
+position = Vector2( -214, 565 )
+rotation = -0.0104059
 texture = ExtResource( 4 )
 offset = Vector2( 0, 392 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="end" type="Position2D" parent="hip/torso/arm_right/hand_right"]
+position = Vector2( -42, 679 )
+__meta__ = {
+"_edit_bone_": true
+}
 
 [node name="arm_left" type="Sprite" parent="hip/torso"]
-position = Vector2( 216, -750 )
+position = Vector2( 227, -754 )
+rotation = -0.0197285
 texture = ExtResource( 6 )
 offset = Vector2( 68, 310 )
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
 
 [node name="hand_left" type="Sprite" parent="hip/torso/arm_left"]
-position = Vector2( 130, 666 )
+position = Vector2( 130, 682 )
+rotation = 0.0197285
 texture = ExtResource( 5 )
 offset = Vector2( 0, 340 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="end" type="Position2D" parent="hip/torso/arm_left/hand_left"]
+position = Vector2( 25, 538 )
+__meta__ = {
+"_edit_bone_": true
+}
 
 [node name="neck" type="Sprite" parent="hip/torso"]
-position = Vector2( -18, -770 )
+position = Vector2( -27, -768 )
+rotation = 0.0178016
 texture = ExtResource( 7 )
 offset = Vector2( 0, -56 )
+__meta__ = {
+"_edit_bone_": true,
+"_edit_ik_": true
+}
 
 [node name="head" type="Sprite" parent="hip/torso/neck"]
 position = Vector2( 0, -346 )
+rotation = -0.0178016
 texture = ExtResource( 9 )
+__meta__ = {
+"_edit_bone_": true
+}
+
+[node name="end" type="Position2D" parent="hip/torso/neck/head"]
+position = Vector2( 18, -263 )
+__meta__ = {
+"_edit_bone_": true
+}
