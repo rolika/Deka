@@ -14,6 +14,8 @@ func _process(delta):
 	var velocity = Vector2.ZERO  # player's movement vector
 	if Input.is_action_pressed("ui_head"):
 		 $AnimationPlayer.play("jump")
+	if Input.is_action_pressed("right_kick"):
+		$AnimationPlayer.play("right_kick")
 	if Input.is_action_pressed("ui_right"):
 		velocity.x += 1
 	if Input.is_action_pressed("ui_left"):
