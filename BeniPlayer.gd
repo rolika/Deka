@@ -16,6 +16,8 @@ func _process(delta):
 		 $AnimationPlayer.play("jump")
 	if Input.is_action_pressed("right_kick"):
 		$AnimationPlayer.play("right_kick")
+	if Input.is_action_pressed("left_kick"):
+		$AnimationPlayer.play("left_kick")
 	if Input.is_action_pressed("ui_right"):
 		velocity.x += 1
 	if Input.is_action_pressed("ui_left"):
