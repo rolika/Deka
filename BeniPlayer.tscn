@@ -889,6 +889,7 @@ tracks/0/keys = {
 [sub_resource type="Animation" id=7]
 resource_name = "left_kick"
 length = 0.2
+loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("hip/leg_left/shin_left/foot_left:rotation_degrees")
 tracks/0/interp = 1
@@ -1045,58 +1046,11 @@ tracks/12/keys = {
 "update": 0,
 "values": [ Vector2( 227, -754 ) ]
 }
-tracks/13/type = "value"
-tracks/13/path = NodePath("hip/torso:position")
-tracks/13/interp = 1
-tracks/13/loop_wrap = true
-tracks/13/imported = false
-tracks/13/enabled = true
-tracks/13/keys = {
-"times": PoolRealArray( 0.2 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 18, -303 ) ]
-}
-tracks/14/type = "value"
-tracks/14/path = NodePath("hip/torso:rotation_degrees")
-tracks/14/interp = 1
-tracks/14/loop_wrap = true
-tracks/14/imported = false
-tracks/14/enabled = true
-tracks/14/keys = {
-"times": PoolRealArray( 0.2 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 3.39971 ]
-}
-tracks/15/type = "value"
-tracks/15/path = NodePath("hip:position")
-tracks/15/interp = 1
-tracks/15/loop_wrap = true
-tracks/15/imported = false
-tracks/15/enabled = true
-tracks/15/keys = {
-"times": PoolRealArray( 0.2 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ Vector2( 0, 0 ) ]
-}
-tracks/16/type = "value"
-tracks/16/path = NodePath("hip:rotation_degrees")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/keys = {
-"times": PoolRealArray( 0.2 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ -3.39971 ]
-}
 
 [sub_resource type="Animation" id=5]
 resource_name = "right_kick"
 length = 0.2
+loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("hip/leg_right/shin_right/foot_right/end:rotation_degrees")
 tracks/0/interp = 1
@@ -1104,10 +1058,10 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ -9.49489, -83.3915, -9.49489 ]
+"values": [ -9.49489, -83.3915 ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("hip/leg_right/shin_right/foot_right:rotation_degrees")
@@ -1152,10 +1106,10 @@ tracks/4/loop_wrap = true
 tracks/4/imported = false
 tracks/4/enabled = true
 tracks/4/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ Vector2( 56.8759, -67.0638 ), Vector2( 92.9816, 29.0929 ), Vector2( 56.8759, -67.0638 ) ]
+"values": [ Vector2( 56.8759, -67.0638 ), Vector2( 92.9816, 29.0929 ) ]
 }
 tracks/5/type = "value"
 tracks/5/path = NodePath("hip/leg_right/shin_right/foot_right/end/RighfootRacket/CollisionShape2D:rotation_degrees")
@@ -1164,10 +1118,10 @@ tracks/5/loop_wrap = true
 tracks/5/imported = false
 tracks/5/enabled = true
 tracks/5/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
+"times": PoolRealArray( 0, 0.1 ),
+"transitions": PoolRealArray( 1, 1 ),
 "update": 0,
-"values": [ 27.1, -70.3, 27.1 ]
+"values": [ 27.1, -70.3 ]
 }
 
 [node name="BeniPlayer" type="Area2D"]
@@ -1220,7 +1174,7 @@ __meta__ = {
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hip/leg_left/shin_left/foot_left/end/LeftfootRacket"]
 position = Vector2( -35.4378, -84.1624 )
-rotation = -0.523598
+rotation = -0.523599
 shape = SubResource( 6 )
 
 [node name="leg_right" type="Sprite" parent="hip"]

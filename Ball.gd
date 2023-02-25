@@ -1,7 +1,7 @@
 extends RigidBody2D
 
 
-const MAX_SPEED = 200
+const MAX_SPEED = 150
 
 
 func _integrate_forces(state):

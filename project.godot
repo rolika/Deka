@@ -73,6 +73,9 @@ left_kick={
 [physics]
 
 common/enable_pause_aware_picking=true
+2d/default_gravity=200
+2d/default_linear_damp=0.0
+2d/default_angular_damp=2.0
 
 [rendering]
 
